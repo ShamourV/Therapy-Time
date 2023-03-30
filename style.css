@@ -2,6 +2,8 @@ h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 body {background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(37,37,37,1) 29%, rgba(138,138,138,1) 52%, rgba(178,178,178,1) 73%, rgba(255,255,255,1) 90%);
-    min-height: 100vh;
+    background: rgb(0,0,0);
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 14%, rgba(46,156,8,1) 42%, rgba(141,196,4,1) 62%, rgba(255,243,0,1) 100%);
+min-height: 100vh;
 }
