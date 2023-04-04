@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
-  
+ <input name="send-to" value="svassell2@brooklynsteamcenter.org" hidden>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -41,17 +41,49 @@
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
-      </div>
+     </div>
     </div>
   </nav>
-  <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
+  
+  <form
+    action="https://us-central1-steam-center-app-dev.cloudfunctions.net/formToEmail"
+    method="post"
+   >
+   <label>Email</label>
+   <br>
+    <input placeholder="example@gmail.com"> 
+    <br>
+<lable>Name</lable>
+<br>
+<input placeholder="Name">
+<br> 
+<label>Best contact time:</label>
+<br>
+<input type="time" name="contact time">
+<br>
+<label>Comments</label>
+<br>
+<textarea name="Comments"></textarea>
+<br>
+
+<input name="send-to" value="svassell2@brooklynsteamcenter.org" hidden>
+<br>
+<input type="checkbox" name="terms">
+<label>I agree to the terms and conditions</label>
+<br>
+<p>What is the best way we can contact you</p>
+<input type="radio" name="contactTypes" value="phone">
+<lable>Phone</lable> 
+<br>
+<input type="radio" name="contactTypes" value="email">
+<label>Email</label>
+<br>
+<input type="radio" name="contactTypes" value="linkein">
+<label>Linkedin</label> <br>
+
+<input type="submit">
+<input type="reset">
+</form>
 </body>
-</html>
+<a href="https://github.com/ShamourV"></a>
 </html>
