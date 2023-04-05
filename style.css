@@ -6,4 +6,6 @@ body {background: rgb(0,0,0);
     background: rgb(0,0,0);
 background: linear-gradient(0deg, rgba(0,0,0,1) 14%, rgba(46,156,8,1) 42%, rgba(141,196,4,1) 62%, rgba(255,243,0,1) 100%);
 min-height: 100vh;
+text-align: center
 }
+
